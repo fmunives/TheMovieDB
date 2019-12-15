@@ -1,0 +1,14 @@
+<!-- <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Las películas del momento</h1>
+    <p class="lead">Encuentra los más visto en todos los géneros.</p>
+  </div>
+</div> -->
+<div class="container mt-5 ">
+  <app-loading *ngIf="loading"></app-loading>
+  <div *ngIf="!loading && cartelera && populares  && child ">
+    <app-galery titulo="Peliculas del momento" [peliculas]=" cartelera | slice:0:6"></app-galery>
+    <app-galery titulo="Peliculas TOP" [peliculas]=" populares | slice:0:6"></app-galery>
+    <app-galery titulo="Peliculas animadas" [peliculas]=" child | slice:0:6"></app-galery>
+  </div>
+</div>

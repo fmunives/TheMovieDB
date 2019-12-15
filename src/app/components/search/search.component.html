@@ -1,0 +1,17 @@
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col-1 text-right pr-0">
+      <i class="fas fa-search mr-1" style="line-height: 43px;"></i>
+    </div>
+    <div class="col-11">
+      <input class="Busqueda" [(ngModel)]="termino" name="termino" (keyup)="searchMovies()"
+        placeholder="buscar una película" type="text">
+    </div>
+  </div>
+  <app-loading *ngIf="loading"></app-loading>
+  <app-nodata [termino]="termino" *ngIf="nodata"></app-nodata>
+  <div class="card-columns" *ngIf="!loading">
+    <app-movie-card [termino]="termino"></app-movie-card>
+  </div>
+</div>

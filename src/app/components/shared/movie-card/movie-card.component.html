@@ -1,0 +1,9 @@
+<div class="card" *ngFor="let peli of _ms.peliculas ">
+  <img [src]="peli |  movieImage " class="card-img-top" [alt]="peli.original_title">
+  <div class="card-body">
+    <h5 class="card-title">{{peli.original_title}}</h5>
+    <p class="card-text text-justify">{{peli.overview | slice:0:250 }}...</p>
+    <button [routerLink]="['/movie',peli.id, 'search', termino ]" class="btn btn-outline-primary btn-block">ver
+      más</button>
+  </div>
+</div>

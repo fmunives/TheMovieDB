@@ -1,0 +1,7 @@
+/* bootstrap */
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 2rem;
+  }
+}

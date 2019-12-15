@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn-outline-primary {
+  color: #081c24;
+  border-color: #081c24;
+}
+
+.btn-outline-primary:hover {
+  color: white;
+  background-color: #081c24;
+  border-color: #081c24;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #081c24;
+  border-color: #081c24;
+}
+
+.Busqueda {
+  border: none;
+  border-bottom: 1px solid #081c24;
+  width: 100%;
+  margin-bottom: 1rem;
+  outline: none;
+}
