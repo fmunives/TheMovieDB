@@ -29,3 +29,16 @@
   margin-bottom: 1rem;
   outline: none;
 }
+
+.Circle {
+  border-radius: 100%;
+}
+
+.Link {
+  color: #329966;
+}
+
+.Link:hover {
+  text-decoration: none;
+  color: #266e4a;
+}

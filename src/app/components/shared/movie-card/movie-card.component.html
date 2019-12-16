@@ -1,4 +1,4 @@
-<div class="card" *ngFor="let peli of _ms.peliculas ">
+<div class="card animated fadeIn" *ngFor="let peli of _ms.peliculas ">
   <img [src]="peli |  movieImage " class="card-img-top" [alt]="peli.original_title">
   <div class="card-body">
     <h5 class="card-title">{{peli.original_title}}</h5>

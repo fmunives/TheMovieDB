@@ -11,6 +11,8 @@ export class MoviesComponent implements OnInit {
   populares: any;
   child: any;
   loading = true;
+
+  navbar: number;
   constructor(private movies: ThemoviedbService) {}
 
   ngOnInit() {
@@ -26,5 +28,15 @@ export class MoviesComponent implements OnInit {
       this.child = data;
       this.loading = false;
     });
+  }
+
+  Getnavbar() {
+    const windowTop = window.scrollY;
+    console.log(windowTop);
+    if (windowTop > 200) {
+      this.navbar = 200;
+    } else {
+      console.log('no hay medida');
+    }
   }
 }

@@ -13,6 +13,7 @@ import { MovieImagePipe } from './pipes/movie-image.pipe';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { GaleryComponent } from './components/movies/galery.component';
 import { NodataComponent } from './components/shared/nodata/nodata.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NodataComponent } from './components/shared/nodata/nodata.component';
     MovieImagePipe,
     LoadingComponent,
     GaleryComponent,
-    NodataComponent
+    NodataComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
